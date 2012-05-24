@@ -1,6 +1,8 @@
-			------Nessus-grab.sh------
-Not so great script written to grab finished nessus scans, create report, and
-send the report via email to the person of your choosing.
+			*------Nessus-grab.sh------*
+
+Script written to grab finished nessus scans, create report, and
+send the report via email to the person of your choosing. It is not nearly as effecient or pretty as it could be
+but I had a need for something quick that would work.
 
 Must have linux tools mpack and ssmtp installed and configured.
 
