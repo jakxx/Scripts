@@ -1,0 +1,17 @@
+			------Nessus-grab.sh------
+Not so great script written to grab finished nessus scans, create report, and
+send the report via email to the person of your choosing.
+
+Must have linux tools mpack and ssmtp installed and configured.
+
+Script read a file named login.txt for username and password to pass to nessus server.
+Place username on first line and password on second line.
+
+This script is written to only email out scans that were performed on the same day
+as script is run.
+
+Pass valid IP of local nessus server and valid email of intended recipient of report
+
+ex: ./nessus-grab.sh 192.168.1.1 boss@company.com
+
+ 
