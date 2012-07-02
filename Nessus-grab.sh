@@ -38,7 +38,7 @@ cat reportlistclean.txt | while read line; do
                         echo $today
                         cleanreportid=`echo $reportnumber | sed 's/<name>//g' | sed 's%</name>%%g'`
                         wget --quiet --post-data "report=$cleanreportid&chapters=vuln_by_plugin&format=html&token=$key" --no-check-certificate https://$1/chapter? -O - > test.html
-                        sed "s%url=%url=https://$i%g" test.html > test2.html
+                        sed "s%url=%url=https://$1%g" test.html > test2.html
                         url=`cat test2.html | grep "https" | sed 's%<title>Formatting the report</title><meta http-equiv="refresh" content="5;url=%%g' | sed 's/">//g'`
                         echo "generating report"
                         sleep 10
