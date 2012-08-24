@@ -1,4 +1,4 @@
-#This is a Powershell script that enumerates avaliable Window$ shares and dumps them to a file.
+#This is a Powershell script that enumerates avaliable Window$ shares and dumps them to a file called shares.txt.
 #Written by jakx
 #Usage: ./enumerate.ps1
 
