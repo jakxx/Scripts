@@ -1,3 +1,6 @@
+#This is a Powershell script that enumerates avaliable Window$ shares and dumps them to a file.
+#Written by jakx
+#Usage: ./enumerate.ps1
 
 echo "Fetching IP's.."
 ipconfig | select-string "ipv4"
