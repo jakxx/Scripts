@@ -1,4 +1,6 @@
 #!/bin/sh
+#Script to grab a website's robots.txt file and open all "disallow" entries in a web browser
+
 
 input1=`echo $1 | grep -o "\."`
 
