@@ -1,20 +1,9 @@
-			*------Nessus-grab.sh------*
+**Scripts I have written for pentesting/automating things.. and stuff... **
 
-Script written to grab finished nessus scans, create report, and
-send the report via email to the person of your choosing. It is not nearly as effecient or pretty as it could be
-but I had a need for something quick that would work.
+Nessus-grab.sh - Bash script written to grab finished nessus scans, create report, and send the report via email to the person of your choosing
 
-Tested on Nessus 5 only
-Must have linux tools mpack and ssmtp installed and configured.
+Enumerate.ps1 - Powershell script that enumerates avaliable Window$ shares and dumps them to a file called shares.txt
 
-Script reads a file named login.txt for username and password to login to nessus server.
-Place username on first line and password on second line.
+Robocop.sh - Bash script to grab a website's robots.txt file and view all "disallow" entries in a firefox web browser
 
-This script is written to only email out scans that were performed on the same day
-as the script is run.
 
-Pass valid IP of local nessus server and valid email of intended recipient of report
-
-ex: ./nessus-grab.sh 192.168.1.1 boss@company.com
-
- 
