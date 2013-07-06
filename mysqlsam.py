@@ -1,5 +1,12 @@
 #!/usr/bin/python
 
+#Author - jakx
+
+#http://securitypadawan.blogspot.com/2013/06/pulling-windows-hashes-using-mysql.html
+
+#Script that makes a connection to a MySQL database,
+#pulls a hex encoded file, then dumps it to a file on your local machine.
+
 import MySQLdb
 
 #You will need to edit the connection line
