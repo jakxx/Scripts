@@ -6,4 +6,4 @@ Enumerate.ps1 - Powershell script that enumerates avaliable Window$ shares and d
 
 Robocop.sh - Bash script to grab a website's robots.txt file and view all "disallow" entries in a firefox web browser
 
-
+Mysqlsam.py - Python script that connects to a MySQL database, pull a file off the operating system, saves it to a file.
