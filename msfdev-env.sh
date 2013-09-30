@@ -23,7 +23,9 @@ source /usr/local/rvm/scripts/rvm
 
 rvm install 1.9.3-p125
 
-git clone https://github.com/rapid7/metasploit-framework.git
+git clone https://github.com/rapid7/metasploit-framework.git msf-dev
+
+cd msf-dev
 
 gem install bundle && bundle install
 
