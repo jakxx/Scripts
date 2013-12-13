@@ -2,6 +2,7 @@
 #Written by jakx
 #Usage: ./enumerate.ps1
 
+function enum-shares{
 echo "Fetching IP's.."
 ipconfig | select-string "ipv4"
 $ip= Read-Host 'Enter the IP you want to use'
@@ -12,4 +13,4 @@ $valid
 $clean= $valid | foreach-object {$_.tostring()} | foreach-object {$_.split(":")} | select-string "[0-9]."
 $clean2= $clean | foreach-object {$_.tostring()} | foreach-object {$_.trim()}
 $clean2 | foreach-object{ echo "..$_" ; Get-WmiObject -class win32_share -computer $_ } > shares.txt
-
+}
