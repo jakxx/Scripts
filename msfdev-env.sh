@@ -17,15 +17,18 @@ sudo apt-get -y install \
   libapr1 libaprutil1 libsvn1 \
   libpcap-dev
 
+
+git clone https://github.com/rapid7/metasploit-framework.git msf-dev
+
+cd msf-dev
+
 \curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby=1.9.3
 
 source /usr/local/rvm/scripts/rvm
 
 rvm install 1.9.3-p125
 
-git clone https://github.com/rapid7/metasploit-framework.git msf-dev
-
-cd msf-dev
+sleep 5
 
 gem install bundle && bundle install
 
