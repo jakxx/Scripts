@@ -10,6 +10,6 @@ echo "Usage: ./robocop.sh [www.targetsite.com]"
         exit
 fi
 
-curl "$1/robots.txt" > robots.txt
+robots=`curl "$1/robots.txt"`
 
-firefox -net-tab `cat robots.txt | sed "s%Disallow: /%http://$1/%g" | grep http`
+firefox -net-tab `echo $robots | grep Disallow | sed "s%Disallow: /%http://$1/%g" | grep http`
