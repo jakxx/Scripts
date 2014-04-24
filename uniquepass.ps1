@@ -6,7 +6,7 @@ function Hash($textToHash)
     Takes an MD5 hash of a (optional) unique string, a hardcoded string, and the hostname in which
     the function is run on.
 .NOTES   
-    Author         : jakx_
+    Author: jakx_
 .EXAMPLE  
     hash testing  
 #>
