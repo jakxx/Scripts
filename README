@@ -1,11 +1,16 @@
 **Scripts I have written for pentesting/automating things.. and stuff... **
 
-Nessus-grab.sh  - Bash script written to grab finished nessus scans, create report, and send the report via email to the person of your choosing
+Nessus-grab.sh
+- Bash script written to grab finished nessus scans, create report, and send the report via email to the person of your choosing
 
-Enumerate.ps1   - Powershell script that enumerates avaliable Window$ shares and dumps them to a file called shares.txt
+Enumerate.ps1   
+- Powershell script that enumerates avaliable Window$ shares and dumps them to a file called shares.txt
 
-Robocop.sh      - Bash script to grab a website's robots.txt file and view all "disallow" entries in a firefox web browser
+Robocop.sh      
+- Bash script to grab a website's robots.txt file and view all "disallow" entries in a firefox web browser
 
-Mysqlsam.py     - Python script that connects to a MySQL database, pull a file off the operating system, saves it to a file.
+Mysqlsam.py     
+- Python script that connects to a MySQL database, pull a file off the operating system, saves it to a file.
 
-uniquepass.ps1  - PowerShell script that can be loaded as a function and used to generate/recover unique local administrator passwords
+uniquepass.ps1  
+- PowerShell script that can be loaded as a function and used to generate/recover unique local administrator passwords
