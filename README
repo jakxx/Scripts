@@ -10,7 +10,10 @@ Robocop.sh
 - Bash script to grab a website's robots.txt file and view all "disallow" entries in a firefox web browser
 
 Mysqlsam.py     
-- Python script that connects to a MySQL database, pull a file off the operating system, saves it to a file.
+- Python script that connects to a MySQL database, pulls a file off the operating system, saves it locally.
 
 uniquepass.ps1  
 - PowerShell script that can be loaded as a function and used to generate/recover unique local administrator passwords
+
+lemmeout.py  
+- Python script that uses mubix's letmeoutofyour.net server to enumerate allowed outbound ports
