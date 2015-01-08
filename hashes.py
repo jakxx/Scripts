@@ -14,7 +14,7 @@ print "---Match Found---"
 for x in d.keys():
     if len(d[x]) == len(hash) and d[x][:1] is hash[:1] and d[x][1:2] == hash[1:2] and d[x][2:3] == hash[2:3]:
         print str(x) + ":" + d[x]
-		exact = str(x)
+	exact = str(x)
 print "\n---Other Possible Matches---"
 for x in d.keys():
     if len(d[x]) == len(hash) and str(x) != exact:
