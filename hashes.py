@@ -12,7 +12,10 @@ with open("hashes.txt") as fd:
 exact = ""
 print "---Exact Match---"
 for x in d.keys():
-    if len(d[x]) == len(hash) and d[x][:1] is hash[:1] and d[x][1:2] == hash[1:2] and d[x][2:3] == hash[2:3]:
+    if d[x][:1] is hash[:1] and d[x][1:2] == hash[1:2] and d[x][2:3] == hash[2:3] or :
+        print str(x) + ":" + d[x]
+        exact = str(x)
+    if str(d[x]).isalnum() and hash.isalnum() and len(d[x]) == len(hash):
         print str(x) + ":" + d[x]
         exact = str(x)
 if (exact):
