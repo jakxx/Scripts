@@ -17,3 +17,9 @@ uniquepass.ps1
 
 lemmeout.py  
 - Python script that uses mubix's letmeoutofyour.net server to enumerate allowed outbound ports
+
+robocop.py      
+- port of robocop.sh to python
+
+hashes.py
+- script to try assisting in identifying password hash types
