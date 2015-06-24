@@ -23,13 +23,11 @@ def grab(url):
 
 #Function to parse argument
 def parse(argument):
-    try:
-        len(str(argument)) > 7 and argument[0:4] == "http"
+    if len(str(argument)) > 7 and argument[0:4] == "http":
         return True
-    except:
+    else:
         print "What are you doing? I need a real url..."
         print "Usage: robocop.py http://www.google.com"
-        sys.exit()
 
 if parse(sys.argv[1]):
     grab(sys.argv[1])
