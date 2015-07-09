@@ -23,3 +23,6 @@ robocop.py
 
 hashes.py
 - script to try assisting in identifying password hash types
+
+quickie.py
+- script to quickly enumerate the existence of a file across many urls
