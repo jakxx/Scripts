@@ -2,6 +2,16 @@
 import sys
 import urllib2
 
+def usage():
+   print " "
+   print "Script to enumerate specific file from many urls"
+   print "USAGE: python quickie.py urls.txt \".htaccess\""
+   print " "
+   sys.exit()
+
+if len(sys.argv) < 3 or sys.argv[1] == '-h':
+    usage()
+
 file = sys.argv[1]
 target = sys.argv[2]
 
