@@ -24,6 +24,11 @@ function count()
 	
 	foreach ($risk in $risks){
 		$count = $impcsv | select -unique risk, "plugin id" | where risk -eq $risk | measure-object | select -expandproperty count
-		write-host "$risk : $count"
+		$props += @{
+		$risk = $count
 		}
+	}
+	$obj = @(new-object pscustomobject -Property $props)
+	$obj
 }
+	
