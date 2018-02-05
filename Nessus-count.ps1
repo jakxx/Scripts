@@ -6,7 +6,7 @@
 .NOTES   
     Author: jakx_
 .EXAMPLE  
-    count .\nessus.csv
+    count -csvfile .\nessus.csv
 #>
 
 function count()
