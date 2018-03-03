@@ -21,14 +21,12 @@ function count()
 	
 	#define risks we care about
 	$risks = @("Critical","High","Medium")
+	$table = New-Object PSObject
 	
 	foreach ($risk in $risks){
 		$count = $impcsv | select -unique risk, "plugin id" | where risk -eq $risk | measure-object | select -expandproperty count
-		$props += @{
-		$risk = $count
-		}
+		$table | Add-Member Noteproperty $risk $count
 	}
-	$obj = @(new-object pscustomobject -Property $props)
-	$obj
+	$table
 }
 	
