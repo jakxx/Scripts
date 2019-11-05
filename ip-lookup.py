@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #Script to take list of ip addresses and geolocate them
-#Requires GeoLiteCity.dat file 
+#Requires GeoLiteCity.dat file -- http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
 
 
 #useage: script.py ips.txt [--non-usa]
