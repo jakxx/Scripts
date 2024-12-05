@@ -11,7 +11,9 @@ function lemmeout{
 	#supress errors
 	$ErrorActionPreference = "silentlycontinue"; 
 	
-	$ports | % {$req = [System.Net.WebRequest]::Create("http://letmeoutofyour.net:$_"); 
+	$ports | % {$req = [System.Net.WebRequest]::Create("http://letmeoutofyour.net:$_");
+ 	#uncomment the following to do IPv6 as wel
+ 	#$ports | % {$req = [System.Net.WebRequest]::Create("http://[2600:3c01::f03c:91ff:fea1:70e3]:$_"); 
 	req.Timeout = 600; 
 	$resp = $req.GetResponse(); 
 	$respstream = $resp.GetResponseStream(); 
